@@ -6,21 +6,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Book library</title>
         <link rel="stylesheet" href="./style.css">
-        <script src="./script.js" defer></script>
         <script src="https://kit.fontawesome.com/3ef20e5b59.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <!-- <div class="modal">
-                <form action="" class="book_form">
-                    <input class="input" type="text" name="title" id="title" placeholder="Title" required maxlength="100">
-                    <input class="input" type="text" name="author" id="author" placeholder="Author" required maxlength="100">
-                    <input class="input" type="number" name="pages" id="pages" placeholder="No. Pages" required max="10000">
-                    <p>Have you read this book?</p>
-                    <input class="input" type="checkbox" name="didread" id="didread">
-                    <button type="submit" class="submitBtn_form">Submit</button>
-                </form>
-        </div> -->
+        
+        <div class="modal">
+            <div class="close_window_div">
+                <img src="./icons/close_window.png" alt="close" class="close_window">
+            </div>
+            <div class="book_form">
+                <input class="input" type="text" name="title" id="title" placeholder="Title" required maxlength="100">
+                <p class="warning_form">A</p>
+                <input class="input" type="text" name="author" id="author" placeholder="Author" required maxlength="100">
+                <input class="input" type="number" name="pages" id="pages" placeholder="No. Pages" required max="10000">
+                <p>Have you read this book?</p>
+                <input class="input" type="checkbox" name="didread" id="didread">
+                <button class="submitBtn_form">Submit</button>
+            </div>
+        </div>
+
         <div class="main">
+            
             <div class="header">
                 <h1>Book library</h1>
             </div>
@@ -30,19 +36,21 @@
                 <div class="books_grid">
                     
                 </div>
+
+                <footer>
+                    <h3 class="footer_content">Copyright©baltatescuvalentin 
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        <a href="https://github.com/baltatescuvalentin" target="_blank">
+                            <i class="fa-brands fa-github" ></i>
+                        </a>
+                    </h3>
+                </footer>
             </div>
             
 
-            <footer>
-                <h3 class="footer_content">Copyright©baltatescuvalentin 
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>
-                    <a href="https://github.com/baltatescuvalentin" target="_blank">
-                        <i class="fa-brands fa-github" ></i>
-                    </a>
-                </h3>
-            </footer>
+            <script src="./script.js"></script>
         </div>
     </body>
 </html>
